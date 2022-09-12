@@ -621,6 +621,7 @@ footer {
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primary-color-text-theme-dark);
 }
 
 
@@ -656,6 +657,14 @@ footer {
     padding-bottom: 10px;
     padding-left: 28px;
     padding-right: 28px;
+}
+
+.follow-btn:hover,
+.follow-btn:focus {
+    background-color: #188CE8;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-follow-icon {
@@ -840,7 +849,6 @@ footer {
 .modal {
     background-color: rgba(255, 255, 255, 1);
     width: 528px;
-    height: 581px;
     position: absolute;
     transform: translate(-50%, -50%) scale(1);
     transition-property: transform;
@@ -872,7 +880,8 @@ footer {
     align-items: center;
 }
 
-.modal-close-btn:focus .modal-close-icon {
+.modal-close-btn:focus .modal-close-icon,
+.modal-close-btn:hover .modal-close-icon {
     fill: var(--accent-color);
 }
 
@@ -1005,6 +1014,10 @@ form {
     color: var(--accent-color);
 }
 
+.checkbox-text-link:hover {
+    text-decoration: none;
+}
+
 .icon-checkbox-off,
 .icon-checkbox-on {
     cursor: pointer;
@@ -1027,7 +1040,6 @@ form {
 .imput-checkbox {
     margin-right: 7px;
 }
-
 
 .form-btn {
     width: 200px;
