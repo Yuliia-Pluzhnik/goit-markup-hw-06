@@ -1033,12 +1033,24 @@ form {
     display: none;
 }
 
-.imput-checkbox:checked~.icon-checkbox-on .icon-checkbox-own-on {
+.input-checkbox:checked~.icon-checkbox-on .icon-checkbox-own-on {
     display: block;
 }
 
-.imput-checkbox {
+.input-checkbox:focus+.icon-checkbox-off {
+    border: 4px solid var(--accent-color);
+}
+
+.input-checkbox:hover+.icon-checkbox-off {
+    border: 4px solid var(--accent-color);
+}
+
+.input-checkbox {
     margin-right: 7px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .form-btn {
